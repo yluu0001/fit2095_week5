@@ -1,0 +1,21 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <body>
+        <div class="sidenav">
+                <a href=http://localhost:8080/index.html>Home</a>
+                <a href=http://localhost:8080/showTask>show all tasks</a>
+        </div>
+                
+            <div class="display_msg">
+                <h1>
+                    Please try and add a new task! 
+                </h1>
+                <form action = "/newTask" method = "POST" class="">
+                    Task Name: <input type="text" name="taskname" /> </br>
+                    Task Date:  <input type="text" name="taskdate" /> </br>
+                    Task Desc: <input type="text" name="taskdesc" /> </br>
+                    <button>Submit</button>
+                </form>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <body>
+
+        <div class="sidenav">
+                <a href=http://localhost:8080/index.html>Home</a>
+                <a href=http://localhost:8080/addNewtask.html>Add new Task</a>
+            </div>
+                       
+        <div class="display_msg">
+            <h1>
+                 Welcome to my task management system! 
+            </h1>
+            <table id="t01">
+                <tr>
+                    <th>Task Name</th>
+                    <th>Task Date</th>
+                    <th>Task Desc</th>
+                </tr>
+                <% for(let i=0;i<tasks.length;i++){ %>
+                        
+                <tr>
+                    <td>
+                        <%= tasks[i].taskname %>
+                     </td>
+                    <td>
+                        <%= tasks[i].taskdate %>
+                    </td>
+                    <td>
+                        <%= tasks[i].taskdesc %>
+                    </td>
+                </tr>
+                <%} %>
+            </table>
+        </div>
+    </body>
+</html>
