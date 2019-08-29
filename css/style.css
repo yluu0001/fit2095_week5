@@ -79,3 +79,7 @@ input[type=text]:focus{
 .display_msg h1{
     margin-top:20px;
 }
+
+body{
+    background-color: darkgray;
+}
